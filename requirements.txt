@@ -1,4 +1,6 @@
+streamlit
 pandas
 seaborn
-matplotlib.pyplot
-scipy.stats
+matplotlib
+scipy
+openpyxl
