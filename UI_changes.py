@@ -5,7 +5,7 @@ import math
 # Load player data from CSV
 @st.cache_data
 def load_players():
-    df = pd.read_csv("/Users/jamesjoyce/Metric_Dashboard/fake_player_data_updated.csv")
+    df = pd.read_csv("fake_player_data_updated.csv")
     return df.to_dict(orient="records")
 
 def format_height(inches):
