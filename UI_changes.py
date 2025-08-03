@@ -20,7 +20,7 @@ st.title("Player Roster")
 # Sidebar filters
 search_term = st.text_input("Search by player name")
 positions = ["All", "QB", "RB", "WR", "TE", "OL", "DL", "LB", "DB", "K", "P"]
-grades = ["All", "2026", "2027", "2028", "2029",'2030]
+grades = ["All", "2026", "2027", "2028", "2029",'2030']
 selected_position = st.selectbox("Filter by position", positions)
 selected_grade = st.selectbox("Filter by grade", grades)
 
