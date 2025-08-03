@@ -31,7 +31,7 @@ if search_term:
 if selected_position != "All":
     players = [p for p in players if p["position"] == selected_position]
 if selected_grade != "All":
-    players = [p for p in players if str(p["class"]) == selected_grade]
+    players = [p for p in players if str(p["grade"]) == selected_grade]
 
 # Pagination setup
 players_per_page = 12
@@ -42,6 +42,25 @@ start = page_number * players_per_page
 end = start + players_per_page
 visible_players = players[start:end]
 
+# Custom CSS for hover effect
+st.markdown("""
+    <style>
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card {
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Display cards in grid
 cols = st.columns(3)
 for idx, player in enumerate(visible_players):
@@ -49,7 +68,7 @@ for idx, player in enumerate(visible_players):
     with col:
         html_card = f"""
         <a href='https://google.com' target='_blank' style='text-decoration: none;'>
-        <div style="border-radius: 15px; padding: 20px; margin: 10px 0; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)'">
+        <div class="card">
             <h3 style='margin-bottom: 5px;'>{player['name']}</h3>
             <p style='margin-top: -5px; font-size: 13px; color: #6b7280;'>{player.get('high_school', 'Unknown HS')}</p>
             <div style="margin: 10px 0;">
@@ -69,7 +88,7 @@ for idx, player in enumerate(visible_players):
             <div style="display: flex; gap: 10px;">
                 <div style="background: #ecfdf5; padding: 10px; border-radius: 10px; flex: 1; text-align: center;">
                     <div style="font-size: 12px; color: #059669;">Frame Score</div>
-                    <div style="font-weight: bold; color: black;">{player['score_weight']} </div>
+                    <div style="font-weight: bold; color: black;">{player['score_weight']}</div>
                 </div>
                 <div style="background: #f0f9ff; padding: 10px; border-radius: 10px; flex: 1; text-align: center;">
                     <div style="font-size: 12px; color: #0284c7;">RAS Score</div>
@@ -81,10 +100,10 @@ for idx, player in enumerate(visible_players):
         st.markdown(html_card, unsafe_allow_html=True)
 
 # Navigation buttons
-prev_col, _, next_col = st.columns([1, 7, 1])
+prev_col, _, next_col = st.columns([1, 10, 1])
 with prev_col:
     if page_number > 0:
-        if st.button("⬅️ Previous", use_container_width = True):
+        if st.button("⬅️ Previous"):
             st.session_state.page_number = page_number - 1
 with next_col:
     if page_number < num_pages - 1:
