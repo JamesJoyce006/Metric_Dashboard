@@ -1,0 +1,26 @@
+id,name,position,class,height,weight,score_weight,high_school,frame_score,ras_score
+977a4aa8-fac0-42a9-8a28-bd3455a4d9f1,Jason Smith,P,2026,76,171,187,Lincoln HS,6.9,9.6
+8ee8364e-9705-4e6d-9f15-97796d3245f1,Mike Rodriguez,WR,2026,69,166,184,Edison HS,8.5,9.7
+be5223de-01bf-456e-a95e-47394e6e819a,Elijah Clark,DL,2026,71,264,281,Kennedy Catholic,7.1,9.6
+b4c31003-7145-4115-b2e5-09454cace3b7,Mike Clark,WR,2027,68,289,311,Lincoln HS,7.1,10.0
+c037115e-14e3-4a40-a6e9-3e214ad16140,Tyrell Brown,P,2030,72,235,253,Kennedy Catholic,6.7,9.7
+3de0cd85-0c94-4257-80e6-90b5d4c86f44,Devon Brown,P,2028,65,223,243,Washington Charter,7.4,9.3
+979b65df-177d-4965-b45d-7f096284e5e4,Elijah Lee,QB,2030,67,190,205,Cleveland HS,7.8,7.7
+13b4900d-0e3a-434c-b5aa-338c5527f421,Aaron Brown,TE,2028,76,257,274,Lincoln HS,7.7,9.5
+f7e4594a-8c51-42fc-b6f5-bf2b7203da8a,Jason Moore,K,2028,66,234,257,Cleveland HS,7.0,8.6
+ed63ef47-f23f-4ba0-8b7f-e64f9bfa0447,Jason Brown,DB,2029,78,199,221,Franklin Regional,7.7,9.7
+b4a276e6-da64-4e1a-9646-3176112da011,Tyrell Brown,DB,2030,71,181,201,Jefferson Academy,8.2,8.1
+9fefde6d-cdd5-4b09-8b22-0008b08c2f10,Mike Brown,P,2030,74,181,199,Edison HS,7.3,8.2
+79645112-ed1a-4ab9-be51-1aa91a2654e3,Tyrell Clark,DB,2026,72,206,231,Jefferson Academy,8.4,9.3
+47074bfb-3da3-4f1d-ae41-8c23bcc82ba8,Matt Brown,K,2029,73,282,301,Kennedy Catholic,6.5,7.8
+5218b70c-02b2-4a4c-b5f7-70493f4607a9,Tyrell Smith,OL,2030,70,247,267,Roosevelt Prep,6.9,8.8
+1215d1b0-e523-4c33-9325-64f4caa77534,Chris Johnson,OL,2027,73,219,238,Grant Union,7.5,8.6
+d4473135-6585-4c35-abb2-c59015839d57,John Rodriguez,LB,2027,77,297,318,Cleveland HS,7.3,7.9
+737468e1-3769-4435-a47a-6836df0fc284,Kyle White,RB,2029,76,227,245,Lincoln HS,7.9,9.7
+66755068-1956-4120-b2fa-aa8abbcce06a,Aaron White,OL,2026,69,272,295,Roosevelt Prep,8.5,8.7
+d0af38f1-5ff5-4b70-9c45-50dcebbdfa58,Jason Smith,QB,2028,65,261,276,Lincoln HS,6.6,8.9
+9a89824f-f99d-4761-a7e2-f82625ab0bb5,Jason Lee,OL,2027,78,239,255,Grant Union,7.3,9.5
+14962f04-1afb-4598-98c0-51fd5a70dbab,Matt Smith,WR,2029,67,163,184,Lincoln HS,7.2,8.7
+f8ccd0b6-b219-4982-b25c-8b709ef945f4,Jason Lee,TE,2029,72,229,246,Hamilton Tech,8.5,9.9
+dfc9e524-1ca0-42b1-8ef9-7a634a847229,Chris Smith,DB,2029,66,173,189,Cleveland HS,7.8,10.0
+9b512511-69bf-42c8-9193-0e355e692b31,Matt Lee,QB,2028,77,272,291,Roosevelt Prep,7.0,7.6
